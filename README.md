@@ -81,12 +81,16 @@ fewshot-enrichment/
 
 ## Output Files (in `results/`)
 
-| File                 | Description                                     |
-| -------------------- | ----------------------------------------------- |
-| `top_matches.json`   | Top enriched biological signatures (w/ scores)  |
-| `key_phrases.txt`    | Top biological key phrases from gene summaries  |
-| `wordcloud.png`      | Word cloud based on NCBI gene summary text      |
-| `embedding_plot.png` | UMAP plot showing proximity to known signatures |
+| File                             | Description                                                  |
+|----------------------------------|--------------------------------------------------------------|
+| `top_matches.json`               | Top enriched biological signatures based on full gene set    |
+| `key_phrases.txt`                | Top biological phrases extracted from all gene summaries     |
+| `gene_summaries.json`            | Raw NCBI summary for each gene used in the input             |
+| `per_gene_top_matches.json`      | Top enriched signatures for each individual gene             |
+| `per_gene_key_phrases.json`      | Top key phrases per gene, using transformer-based extraction |
+| `wordcloud.png`                  | Visual word cloud generated from all gene summaries          |
+| `embedding_plot.png`             | UMAP plot of query vs. known signature embeddings            |
+
 
 ---
 
